@@ -2,7 +2,7 @@
 title: "Comparing Computational Models of Monosyllabic Word Acceptability"
 collection: Talk
 type: "Talk"
-permalink: /talks/2012-03-01-talk-1
+permalink: /talks/2024-03-15-talk-emory
 venue: "5th Annual Emory Undergraduate Linguistics Conference"
 date: 2024-03-15
 location: "Virtual"
