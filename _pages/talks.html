@@ -11,6 +11,17 @@ author_profile: true
 
 {% endif %}
 
-{% for post in site.talks reversed %}
+{% assign upcoming = site.talks | where: "status", "upcoming" | sort: "date" %}
+{% assign past = site.talks | where_exp: "item", "item.status != 'upcoming'" | sort: "date" | reverse %}
+
+{% if upcoming.size > 0 %}
+<h2>Upcoming & In Press</h2>
+{% for post in upcoming %}
+  {% include archive-single-talk.html %}
+{% endfor %}
+{% endif %}
+
+<h2>Past Talks</h2>
+{% for post in past %}
   {% include archive-single-talk.html %}
 {% endfor %}
