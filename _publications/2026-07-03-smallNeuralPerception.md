@@ -1,5 +1,5 @@
 ---
-title: "Small Neural Networks as Models of Cross-Linguistic Speech Perception"
+title: "[in press] Small Neural Networks as Models of Cross-Linguistic Speech Perception"
 collection: publications
 category: conferences
 permalink: /2026-04-20-smallNeuralPerception
