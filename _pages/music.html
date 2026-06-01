@@ -1,0 +1,165 @@
+---
+layout: archive
+title: "Music"
+permalink: /music/
+author_profile: true
+---
+
+{% include base_path %}
+
+<style>
+  .music-intro {
+    font-size: 1.05em;
+    color: #555;
+    margin-bottom: 2em;
+    max-width: 680px;
+  }
+
+  /* ── Spotify embed ── */
+  .spotify-section h2,
+  .concerts-section h2 {
+    font-size: 1.3em;
+    font-weight: 600;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.4em;
+    margin-bottom: 1em;
+    color: #222;
+  }
+
+  .spotify-wrapper {
+    max-width: 700px;
+    margin-bottom: 2.5em;
+  }
+
+  .spotify-wrapper iframe {
+    border-radius: 12px;
+    width: 100%;
+  }
+
+  /* ── Concert table ── */
+  .concerts-section {
+    margin-top: 1em;
+  }
+
+  .concert-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95em;
+  }
+
+  .concert-table thead tr {
+    background-color: #f2f2f2;
+    border-bottom: 2px solid #ccc;
+  }
+
+  .concert-table th {
+    text-align: left;
+    padding: 10px 14px;
+    font-weight: 600;
+    color: #333;
+    white-space: nowrap;
+  }
+
+  .concert-table td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #e8e8e8;
+    vertical-align: top;
+    color: #444;
+  }
+
+  .concert-table tbody tr:last-child td {
+    border-bottom: none;
+  }
+
+  .concert-table tbody tr:hover {
+    background-color: #fafafa;
+  }
+
+  .concert-date {
+    white-space: nowrap;
+    color: #666;
+    font-size: 0.9em;
+  }
+
+  .concert-programme {
+    font-style: italic;
+    color: #555;
+  }
+
+  @media (max-width: 600px) {
+    .concert-table thead {
+      display: none;
+    }
+    .concert-table tr {
+      display: block;
+      margin-bottom: 1.2em;
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      padding: 10px;
+    }
+    .concert-table td {
+      display: block;
+      padding: 4px 8px;
+      border-bottom: none;
+    }
+    .concert-table td::before {
+      content: attr(data-label) ": ";
+      font-weight: 600;
+      color: #333;
+    }
+  }
+</style>
+
+<p class="music-intro">
+  Classical music has long been a companion to my research life. Here I keep a record of live concerts I've attended and share whatever I'm currently listening to.
+</p>
+
+<!-- ── Currently Listening ── -->
+<div class="spotify-section">
+  <h2>🎵 Currently Listening</h2>
+  <div class="spotify-wrapper">
+    <iframe
+      data-testid="embed-iframe"
+      style="border-radius:12px"
+      src="https://open.spotify.com/embed/album/51NWJo4TldHNNT4gHNN48I?utm_source=generator"
+      width="100%"
+      height="352"
+      frameBorder="0"
+      allowfullscreen=""
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy">
+    </iframe>
+  </div>
+</div>
+
+<!-- ── Concert Log ── -->
+<div class="concerts-section">
+  <h2>🎻 Concerts Attended</h2>
+  <table class="concert-table">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Venue</th>
+        <th>Orchestra / Ensemble</th>
+        <th>Programme</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Add your concerts below — copy a <tr> block to add a new entry -->
+      <tr>
+        <td class="concert-date" data-label="Date">DD Mon YYYY</td>
+        <td data-label="Venue">Venue Name, City</td>
+        <td data-label="Orchestra / Ensemble">Orchestra or Ensemble</td>
+        <td class="concert-programme" data-label="Programme">Composer – Work; Composer – Work</td>
+      </tr>
+      <!-- Example row (delete when you add real data):
+      <tr>
+        <td class="concert-date" data-label="Date">14 Mar 2025</td>
+        <td data-label="Venue">Royal Festival Hall, London</td>
+        <td data-label="Orchestra / Ensemble">London Philharmonic Orchestra</td>
+        <td class="concert-programme" data-label="Programme">Beethoven – Symphony No. 7; Brahms – Piano Concerto No. 2</td>
+      </tr>
+      -->
+    </tbody>
+  </table>
+</div>
