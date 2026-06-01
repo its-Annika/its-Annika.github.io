@@ -108,6 +108,26 @@ author_profile: true
       color: #333;
     }
   }
+
+  .music-photo {
+  text-align: center;
+  margin: 3em 0 1em 0;
+}
+
+.music-photo img {
+  width: 60%;
+  max-width: 450px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.music-photo figcaption {
+  margin-top: 0.5em;
+  font-size: 0.9em;
+  font-style: italic;
+  color: #666;
+}
+
 </style>
 
 <p class="music-intro">
@@ -365,13 +385,14 @@ author_profile: true
       </ul>
     </div>
 
-
-    
-    
-    
-
-
-    
-
   </div>
 </div>
+
+
+<figure class="music-photo">
+  <img src="{{ base_path }}/images/music/kmeaALLState.jpg"
+       alt="Concert photo">
+  <figcaption>Your caption here.</figcaption>
+</figure>
+
+
