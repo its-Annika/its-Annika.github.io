@@ -25,6 +25,9 @@ main:
     
   - title: "CV"
     url: /files/cv.pdf
+
+  - title: "Music"
+    url: /music/
     
   #- title: "Guide"
    # url: /markdown/
