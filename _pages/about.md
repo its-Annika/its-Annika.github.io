@@ -13,5 +13,6 @@ I study how listeners perceive non-native speech sounds. Namely, I aim to use ma
 
 
 ### News & Highlights
-- **May 2026** — Paper accepted to SCiL 2026!
+- **June 2026** - Featured in [UMIACS News](https://www.umiacs.umd.edu/news-events/news/teaching-ai-listen-umd-researcher-models-how-people-learn-new-languages)!
+- **May 2026** — Paper accepted to [SCiL 2026](https://openpublishing.library.umass.edu/scil/article/id/4005/)!
 - **April 2026** — Awarded the [NSF GRFP](https://linguistics.umd.edu/news/annika-wins-nsf-support)!
